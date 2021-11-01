@@ -8,7 +8,8 @@ let dolarDun=9.20;
     let dolarDun=9.10
 }
 
-console.log(dolarDun);
+console.log(dolarDun);//9.20
+
 
  const euroDun=11.2
 
