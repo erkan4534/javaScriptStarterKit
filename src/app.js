@@ -24,3 +24,6 @@ let konutKredileri=[12,"Emlak Konut Kredisi",["a","b","c"]]
 
 let konutKredileri2=["Konut kredisi","Emlak Konut Kredisi","Kamu Komut Kredisi"]
 
+for (let i = 0; i <konutKredileri2.length; i++) {
+    console.log(konutKredileri2[i]);
+}
