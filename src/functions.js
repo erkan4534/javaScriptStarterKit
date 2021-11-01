@@ -52,3 +52,33 @@ sayi1=sayi2;
 sayi2=100;
 
 console.log(sayi1)
+
+function addToCart4(products){
+    console.log(products);
+}
+
+let products = [
+    {productName:"Elma",unitPrice:10,quantity:5},
+    {productName:"Armut",unitPrice:10,quantity:5},
+    {productName:"Karpuz",unitPrice:10,quantity:5}
+];
+
+addToCart4(products);
+
+
+function add(bisey,...numbers) {//rest operatoru
+    let total=0;
+    for (let i = 0; i <numbers.length ; i++) {
+        total = total+ numbers[i];
+    }
+    console.log(total);
+    console.log(bisey);
+}
+
+add(20,30);
+//add(20,30,40);
+//add(20,30,40,50);
+
+let numbers= [20,30,60,90,50];
+//console.log(...numbers);
+console.log(Math.max(...numbers));
