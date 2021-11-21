@@ -15,7 +15,7 @@ console.log(dolarDun);//9.20
 
 //euroDun=11 const birkere deger eklenir sınrasinda bir daha deger atilamaz
 
-//degiskenler camelCasing olarak yazili ilk hark kucuk oalrak baslar
+//degiskenler camelCasing olarak yazili ilk hark kucuk oarak baslar
 
 //PaskalCasing
 
