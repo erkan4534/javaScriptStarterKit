@@ -81,4 +81,34 @@ add(20,30);
 
 let numbers= [20,30,60,90,50];
 //console.log(...numbers);
-console.log(Math.max(...numbers));
+console.log(Math.max(...numbers));//separate
+
+let [icAnadolu,marmara,karadeniz]= ["İç Anadolu","Marmara","Karadeniz"];//distract
+
+//console.log(icAnadolu);
+//console.log(marmara);
+
+
+
+let [icAnadolu2,marmara2,karadeniz2,[icAnadoluSehirleri]]= [
+    {name:"İç Anadolu",population:"20M"},
+    {name:"Marmara",population:"30M"},
+    {name:"Karadeniz",population:"10M"},
+    [
+        ["Ankara","Konya"],
+        ["İstanbul","Bursa"],
+        ["Sinop","Trabzon"]
+    ]
+];//distract
+
+//console.log(icAnadolu2.name);
+//console.log(marmara2.population);
+
+console.log(icAnadoluSehirleri);
+
+/*let newProductName,newUnitPrice,newQuantity ({productName:newProductName,unitPrice:newUnitPrice,quantity:newQuantity}
+    ={productName:"Elma",unitPrice:10,quantity:5});
+
+console.log(newProductName);
+console.log(newUnitPrice);
+console.log(newQuantity);*/
