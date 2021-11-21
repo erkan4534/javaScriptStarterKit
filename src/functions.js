@@ -85,8 +85,8 @@ console.log(Math.max(...numbers));//separate
 
 let [icAnadolu,marmara,karadeniz]= ["İç Anadolu","Marmara","Karadeniz"];//distract
 
-//console.log(icAnadolu);
-//console.log(marmara);
+console.log(icAnadolu);
+console.log(marmara);
 
 
 
