@@ -3,7 +3,6 @@ export const users = [
         id: 1,
         firstName: "Erkan",
         lastName: "Yildirim",
-        city: "Ankara",
         age: 38,
         creditCardNumber: "123456",
         type: "customer"
@@ -24,7 +23,6 @@ export const users = [
         firstName: "Cansu",
         lastName: "Degirmen",
         city: "Istanul",
-        age: 20,
         salary: 8000,
         type: "employee"
     }
@@ -35,7 +33,6 @@ export const users = [
         lastName: "Kaya",
         city: "Bolu",
         age: 23,
-        salary: 8500,
         type: "employee"
     }
     ,
