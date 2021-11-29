@@ -1,4 +1,5 @@
 import {users} from "../data/users.js";
+import DataError from "../modals/dataError.js";
 
 export default class UserService {
 
@@ -19,7 +20,7 @@ export default class UserService {
                     this.employees.push(user);
                     break;
                 default:
-                    this.errors.push("Wrong user type")
+                    this.errors.push(new DataError("Wrong user type",user));
                     break;
             }
         }

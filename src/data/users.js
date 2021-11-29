@@ -38,5 +38,16 @@ export const users = [
         salary: 8500,
         type: "employee"
     }
+    ,
+
+    {
+        id: 5,
+        firstName: "Eren",
+        lastName: "Ari",
+        city: "Diyarbakir",
+        age: 23,
+        salary: 15000,
+        type: "employe"
+    }
 
 ]
