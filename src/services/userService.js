@@ -40,6 +40,11 @@ export default class UserService {
             }
         }
 
+        if(Number.isNaN(Number.parseInt(user.age))){
+            hasErrors=true;
+            this.errors.push(new DataError(`Validation problem. ${user.age} is not a number`,user))
+        }
+
         return hasErrors;
     }
 
@@ -52,6 +57,11 @@ export default class UserService {
                 hasErrors=true;
                 this.errors.push(new DataError(`Validation problem. ${field} is required`,user));
             }
+        }
+
+        if(Number.isNaN(Number.parseInt(user.age))){
+            hasErrors=true;
+            this.errors.push(new DataError(`Validation problem. ${user.age} is not a number`,user))
         }
 
         return hasErrors;
