@@ -75,6 +75,7 @@ export default class UserService {
                if(!this.checkCustomerValidityForErrors(user)){
                    this.customers.push(user);
                }
+               break;
            case "employee":
                if(!this.checkEmployeeValidityForErrors(user)){
                    this.employees.push(user);

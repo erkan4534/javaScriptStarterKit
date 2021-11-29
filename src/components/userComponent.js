@@ -32,10 +32,10 @@ console.log(customer.lastName);
 console.log("---------------------------------------")
 userService.load();
 
-let customertoAdd = new Customer(1,"Seda","Yilmaz","Ankara","ffsdfsd")
-customertoAdd.type="customer";
+let customerToAdd = new Customer(1,"Seda","Yilmaz","Ankara","ffsdfsd")
+customerToAdd.type="customer";
 
-userService.add(customertoAdd)
+userService.add(customerToAdd)
 console.log(userService.customers);
 console.log(userService.employees);
 console.log(userService.errors);
