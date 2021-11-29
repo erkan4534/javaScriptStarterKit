@@ -6,9 +6,12 @@ console.log("User component yuklendi")
 let userService = new UserService();
 
 let user1 = new User(1,"Erkan","Yildirim","Istanbul");
+let user2 = new User(2,"Baran","Gokcekli","Mugla");
+userService.add(user1);
+userService.add(user2);
 
-userService.add(user1.firstName);
-
+console.log(userService.list());
+console.log(userService.getById(2));
 
 
 userService.getById(1);
