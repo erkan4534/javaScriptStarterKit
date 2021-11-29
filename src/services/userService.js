@@ -1,7 +1,7 @@
 export default class UserService {
 
-    add(){
-        console.log("kullanici eklendi");
+    add(user){
+        console.log("kullanici eklendi" + user);
     }
 
     list(){
