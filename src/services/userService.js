@@ -103,8 +103,8 @@ export default class UserService {
             }else if (customer1.firstName===customer2.firstName){
                 return 0;
             }else{
-                return -1;
+                return -1
             }
-        })
+        });
     }
 }
