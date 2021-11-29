@@ -97,8 +97,8 @@ export default class UserService {
     }
 
     getCustomersSorted(){
-        this.customers.sort((customer1,customer2)=>{
-            if(customer1.firstName<customer2.firstName){
+        return this.customers.sort((customer1,customer2)=>{
+            if(customer1.firstName>customer2.firstName){
                 return 1;
             }else if (customer1.firstName===customer2.firstName){
                 return 0;

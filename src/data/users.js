@@ -1,9 +1,21 @@
 export const users = [
     {
         id: 1,
-        firstName: "Erkan",
+        firstName: "Engin",
         lastName: "Yildirim",
         age: 38,
+        city: "Ankara",
+        creditCardNumber: "123456",
+        type: "customer"
+    }
+    ,
+
+    {
+        id: 6,
+        firstName: "Beytullah",
+        lastName: "Zor",
+        city: "Ankara",
+        age: 36,
         creditCardNumber: "123456",
         type: "customer"
     }
