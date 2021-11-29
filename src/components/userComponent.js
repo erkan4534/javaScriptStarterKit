@@ -1,9 +1,12 @@
 import UserService from "../services/userService.js";
 import User from "../modals/user.js";
+import {BaseLogger, ElasticLogger, MongoLogger} from "../crossCuttingConcerns/logging/logger.js";
 
 console.log("User component yuklendi")
 
-let userService = new UserService();
+
+let logger1 = new MongoLogger();
+let userService = new UserService(logger1);
 
 let user1 = new User(1,"Erkan","Yildirim","Istanbul");
 let user2 = new User(2,"Baran","Gokcekli","Mugla");
