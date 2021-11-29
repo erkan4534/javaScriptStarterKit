@@ -14,12 +14,12 @@ let user2 = new User(2,"Baran","Gokcekli","Mugla");
 userService.add(user1);
 userService.add(user2);
 
-console.log(userService.list());
-console.log(userService.getById(2));
+//console.log(userService.list());
+//console.log(userService.getById(2));
 
 
-userService.getById(1);
-userService.list();
+//userService.getById(1);
+//userService.list();
 
 
 let customer = {id:1,firstName:"Erkan"}
@@ -31,7 +31,11 @@ console.log(customer.lastName);
 
 console.log("---------------------------------------")
 userService.load();
-userService.add(new Customer(1,"Seda","Yilmaz","Ankara","sdfsdfsd"))
+
+let customertoAdd = new Customer(1,"Seda","Yilmaz","Ankara","ffsdfsd")
+customertoAdd.type="customer";
+
+userService.add(customertoAdd)
 console.log(userService.customers);
 console.log(userService.employees);
 console.log(userService.errors);
