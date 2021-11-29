@@ -27,3 +27,8 @@ let customer = {id:1,firstName:"Erkan"}
 customer.lastName="Yildirim";
 
 console.log(customer.lastName);
+
+console.log("---------------------------------------")
+userService.load();
+
+
