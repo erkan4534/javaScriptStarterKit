@@ -69,6 +69,22 @@ export default class UserService {
 
     add(user){
       //  this.users.push(user);
+
+       switch (user.type) {
+           case "customer":
+               if(!this.checkCustomerValidityForErrors(user)){
+                   this.customers.push(user);
+               }
+           case "employee":
+               if(!this.checkEmployeeValidityForErrors(user)){
+                   this.employees.push(user);
+               }
+               break;
+           default:
+               this.errors.push(new DataError("This user can not be added. Wrong user type",user));
+               break;
+       }
+
         this.loggerService.log(user);
     }
 

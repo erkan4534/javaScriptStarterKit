@@ -1,6 +1,7 @@
 import UserService from "../services/userService.js";
 import User from "../modals/user.js";
 import {BaseLogger, ElasticLogger, MongoLogger} from "../crossCuttingConcerns/logging/logger.js";
+import Customer from "../modals/customer.js";
 
 console.log("User component yuklendi")
 
@@ -30,7 +31,9 @@ console.log(customer.lastName);
 
 console.log("---------------------------------------")
 userService.load();
-
+userService.add(new Customer(1,"Seda","Yilmaz","Ankara","sdfsdfsd"))
 console.log(userService.customers);
 console.log(userService.employees);
 console.log(userService.errors);
+
+
